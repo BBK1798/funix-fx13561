@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-img {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#nav{
+    background-color: cadetblue;
+    height: 52px;
+}
+#nav .nav-list{
+    display: none;
+}
+#nav .nav-list li{
+    display: inline-block;
+    padding: 0 24px;
+}
+#nav .nav-list a{
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+#nav .nav-list li:hover a{
+    color: #000;
+}
+#slider{
+    background: url('./image/99-thuyen_hoa.jpg') top center / cover no-repeat ;
+    padding-top: 30%;   
+    position: relative;
+    min-height: 350px;
+}
+#slider .sub-slider > div{
+    display: inline-block;
+    
+    width: 100%;
+}
+#slider .sub-slider input,
+#slider .sub-slider button {
+    width: 100%;
+    padding: 5px 0;
+}
+#slider .sub-slider{
+    padding: 20px 0;
+}
+#slider .sub-slider div
+#slider .slider-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#slider .slider-content button{
+    border: none;
+    border-radius: 15px;
+    background-color: darkcyan;
+    
+}
+.content-slider-img{
+    position: relative;
+}
+.content-slider-para{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(169, 169, 169, 0.623);
+    padding-left: 10px;
+    width: 100%;
+    color: #000;
+}
+.content-main {
+    margin-top: 0;
+}
+.content-main h2{
+    color: darkolivegreen;
+}
+.content-heading{
+    font-size: 20px;
+    color: darkolivegreen;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.content-slider-img img{
+    width: 100%;
+    padding: 10px 0;
+}
+.content .content-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.753);
+    font-weight: 500;
+}
+#footer{
+    
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .footer-icon div{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px;
+}
+#footer .footer-icon a{
+    text-decoration: none;
+    color: cadetblue;
+}
+.tour-sub{
+    display: none;
+}
+.tuor-edit2{
+    height: 52px;
+    border-bottom: 1px solid #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tour-content h3{
+    font-size: 20px;
+}
+.travle-content .travle-header img{
+    width: 100%;
+}
+.travle-content .travle-header{
+    padding: 20px 0;
+}
+.travle-content .travle-header a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.travle-header p,
+.travle-header a,
+.travle-header span{
+    margin-top: 12px;
+}
+.travle-header span{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.384);
+}
+.travle-content h1{
+    margin-top: 50px;
+}
+.tuor-section div{
+    display: inline-block;
+}
+.tuor-section .tour-edit{
+    display: block;
+    margin-top: 40px;
+}
+.tour-price{
+    margin-left: 40px;
+}
+.tour-price a{
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 20px;
+}
+.tour-price button{
+    border: none;
+    background-color: rgba(0, 139, 139, 0.5);
+    border-radius: 20px;
+    width:  50%;
+    padding: 5px 0;
+}
+.hotel{
+    margin-top: 50px;
+}
+.hotel-edit{
+    margin-bottom: 50px;
+}
+.hotel-edit div { 
+    display: inline-block;
+}
+.hetel-price a{
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 15px;
+}
+.hetel-price{
+    width: 65%;
+}
+.hetel-price p{
+    color: dimgray;
+}
+.hetel-price button{
+    border: none;
+    background-color: rgba(0, 139, 139, 0.5);
+    border-radius: 20px;
+    width:  100%;
+    padding: 5px 0;
+}
+.contact{
+    margin-top: 50px;
+}
+.contact h2{
+    margin-bottom: 35px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.contact > p{
+    font-style: italic;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.info-contact i{
+    font-size: 18px;
+    margin-right: 20px;
+}
+.form-contact{
+    width: 100%;
+}
+.contact div{
+    display: inline-block;
+}
+.info-contact{
+    width: 50%;
+}
+.contact-section{
+    width: 100%;
+    float: right;
+}
+.row-cont input{
+    width: 100%;
+}
+.contact-input{
+    width: 100%;
+}
+.row-con,
+.row-cont{
+    width: 100%;
+    display: inline-block;
+}
+.row-contact{
+    width: 100%;
+}
+
+
+/* For mobile */
+@media screen and (max-width:768px) {
+    #nav .nav-list{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #nav .nav-list a{
+        font-size: 10px;
+    }
+    #nav .nav-list li{
+       padding: 0 1.5%;
+    }
+}
+/* For tablet */
+@media screen and (min-width:769px) and (max-width:991px) {
+    .img-ct{
+        width: 49%;
+        display: inline-block; 
+    }
+    .edit-1{
+        margin-left: 1.3%;
+    }
+    .row-4{
+        margin:30px 0;
+    }
+    #nav .nav-list{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #nav .nav-list a{
+        font-size: 16px;
+    }
+    #nav .nav-list li{
+       padding: 0 1.5%;
+    }
+}
+/* For desktop */
+@media screen and (min-width:992px) {
+    #nav .nav-list{
+        display: block;
+    }
+    #slider .sub-slider > div{
+        width: 20%;
+    }
+    #slider .slider-content{
+        background-color: rgba(192, 183, 147, 0.438);
+    }
+    .row-8{
+        width: 65%;
+        margin-top: 40px;
+        border-right: 1px solid #000;
+        padding-right: 20px;
+    }
+    .row-4{
+        width: 30%;
+        float: right;
+        margin-top: 40px; 
+    }
+    .content .container div{
+        display: inline-block;
+    }
+    .img-ct{
+        width: 32.4%;
+        display: inline; 
+    }
+    .img-ct-1{
+        width: 100%;
+    }
+    .travle-section-1{
+        width: 30%;
+        display: inline-block;
+        float: left;
+    }
+    .travle-header{
+        width: 65%;
+        margin-top: 20px;
+    }
+    .travle-header img{
+        max-width: 100%;
+        
+    }
+    .travle-section-2{
+        width: 65%;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .contact-section{
+        width: 50%;
+        
+    }
+    
+    
+}
